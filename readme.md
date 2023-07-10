@@ -18,11 +18,11 @@ bash <(curl -s https://raw.githubusercontent.com/therealnv6/fakecarbon.conf/main
 
 upon executing this command, you'll be prompted with the following question:
 
-````
+```
 Enter the path where you want to save the theme (default:
 ${HOME}/.config/kitty/):
-
 ```
+
 this should generally be kept the default value; unless you're using a more
 advanced kitty configuration. in that case, you should know what to change it
 to.
@@ -30,5 +30,7 @@ to.
 # credits
 
 - obviously, [oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim)
+
 ```
-````
+
+```
