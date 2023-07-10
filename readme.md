@@ -12,13 +12,13 @@ but for kitty.
 
 you can invoke the installation script using the following command:
 
-````sh
+```sh
 bash <(curl -s https://raw.githubusercontent.com/therealnv6/fakecarbon.conf/main/install.sh)
 ```
 
 upon executing this command, you'll be prompted with the following question:
-````
 
+````
 Enter the path where you want to save the theme (default:
 ${HOME}/.config/kitty/):
 
@@ -31,3 +31,4 @@ to.
 
 - obviously, [oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim)
 ```
+````
