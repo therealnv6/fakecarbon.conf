@@ -10,11 +10,19 @@ fi
 # Create the theme directory if it doesn't exist
 mkdir -p "$theme_path"
 
-# Download the theme file
-if curl -fLO "https://raw.githubusercontent.com/therealnv6/fakecarbon.conf/main/files/fakecarbon.conf" -o "${theme_path}/current-theme.conf"; then
-    # Append the theme file to kitty.conf
-    echo 'include current-theme.conf' >> "${theme_path}/kitty.conf"
-    echo "Theme downloaded and applied successfully!"
+# Check if current-theme.conf already exists
+if [ -e "${theme_path}/current-theme.conf" ]; then
+    echo "A theme file already exists. Skipping theme download."
 else
-    echo "Failed to download the theme file!"
+    # Download the theme file
+    if curl -fLO "https://raw.githubusercontent.com/therealnv6/fakecarbon.conf/main/files/fakecarbon.conf" -o "${theme_path}/current-theme.conf"; then
+        # Append the theme file to kitty.conf
+        echo '# BEGIN_KITTY_THEME' >> "${theme_path}/kitty.conf"
+        echo 'include current-theme.conf' >> "${theme_path}/kitty.conf"
+        echo '# END_KITTY_THEME' >> "${theme_path}/kitty.conf"
+
+        echo "Theme downloaded and applied successfully!"
+    else
+        echo "Failed to download the theme file!"
+    fi
 fi
