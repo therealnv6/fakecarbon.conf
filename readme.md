@@ -4,9 +4,9 @@ a replica of [oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim),
 but for kitty.
 
 <img src="https://raw.githubusercontent.com/therealnv6/fakecarbon.conf/main/assets/screenshot.png" 
-    alt="Screenshot" 
     width="50%" 
     align="right">
+<br>
 
 # installation
 
