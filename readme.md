@@ -13,7 +13,7 @@ but for kitty.
 you can invoke the installation script using the following command:
 
 ```sh
-curl -s -L https://raw.githubusercontent.com/therealnv6/fakecarbon.conf/install.sh | bash
+curl -s -L https://raw.githubusercontent.com/therealnv6/fakecarbon.conf/main/install.sh | bash
 ```
 
 upon executing this command, you'll be prompted with the following question:
