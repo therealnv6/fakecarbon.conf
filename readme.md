@@ -30,7 +30,3 @@ to.
 # credits
 
 - obviously, [oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim)
-
-```
-
-```
